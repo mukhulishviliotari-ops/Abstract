@@ -332,6 +332,11 @@ body::-webkit-scrollbar {
 .delay-2 { transition-delay: 0.2s; }
 .delay-3 { transition-delay: 0.3s; }
 
+/* ==========================================
+   7. RESPONSIVE / MOBILE MEDIA QUERIES
+   ========================================== */
+
+   
 @media screen and (max-width: 900px) {
     .features-grid {
         column-gap: 40px;
@@ -344,7 +349,7 @@ body::-webkit-scrollbar {
     }
 }
 
-/* --- Mobile Landscape & Tablets (max-width: 768px) --- */
+
 @media screen and (max-width: 768px) {
     #navbar {
         padding: 0 20px;
@@ -352,59 +357,62 @@ body::-webkit-scrollbar {
     }
 
     #left-side {
-        gap: 10px;
+        gap: 12px;
     }
 
     #left-side a {
-        font-size: 18px;
+        font-size: 20px;
+        font-weight: 500;
     }
 
     #header {
-        width: 30px;
-        height: 30px;
+        width: 32px;
+        height: 32px;
     }
 
     #right-side {
-        gap: 10px;
+        gap: 12px;
     }
 
     #Submit {
-        width: 140px;
-        font-size: 14px;
-        height: 38px;
+        width: 150px;
+        font-size: 15px;
+        font-weight: 600;
+        height: 40px;
     }
 
     #Sign-in {
-        width: 80px;
-        font-size: 14px;
-        height: 38px;
+        width: 85px;
+        font-size: 15px;
+        font-weight: 600;
+        height: 40px;
     }
 
-    /* Prevent fixed height clipping on wrapped text */
     #content_01 {
-        min-height: 320px;
+        min-height: 340px;
         height: auto;
         padding: 40px 20px;
     }
 
     #text_01 {
-        font-size: 38px;
+        font-size: 44px;
+        font-weight: 600;
         margin-top: 0;
     }
 
     #search {
         width: 100%;
-        font-size: 16px;
-        height: 48px;
+        font-size: 17px;
+        height: 50px;
     }
 
     .features-section {
-        margin: 50px auto;
+        margin: 60px auto;
     }
 
     .features-grid {
         grid-template-columns: 1fr;
-        row-gap: 32px;
+        row-gap: 36px;
     }
 
     .feature-card {
@@ -413,65 +421,82 @@ body::-webkit-scrollbar {
     }
 
     .icon-container {
-        width: 60px;
+        width: 65px;
     }
 
     .feature-content h3 {
-        font-size: 18px;
+        font-size: 20px;
+        font-weight: 700;
     }
 
     .feature-content p {
-        font-size: 15px;
+        font-size: 17px;
+    }
+
+    .learn-more {
+        font-size: 16px;
+        font-weight: 600;
     }
 }
 
 
 @media screen and (max-width: 500px) {
     #navbar {
-        padding: 0 12px;
+        padding: 0 14px;
     }
 
-    /* Compact header text on small screens */
     #left-side a {
-        font-size: 16px;
+        font-size: 18px;
+        font-weight: 500;
     }
 
     #right-side {
-        gap: 6px;
+        gap: 8px;
     }
 
-    /* Shrink buttons to fit small screens side-by-side */
     #Submit {
         width: auto;
-        padding: 0 10px;
-        font-size: 13px;
-        height: 36px;
+        padding: 0 12px;
+        font-size: 14px;
+        font-weight: 600;
+        height: 38px;
     }
 
     #Sign-in {
         width: auto;
-        padding: 0 12px;
-        font-size: 13px;
-        height: 36px;
+        padding: 0 14px;
+        font-size: 14px;
+        font-weight: 600;
+        height: 38px;
     }
 
     #text_01 {
-        font-size: 28px;
+        font-size: 34px;
+        font-weight: 600;
     }
 
     #search {
-        padding-left: 16px; /* Adjust left padding if no background icon is used */
-        font-size: 15px;
+        font-size: 16px;
+        height: 48px;
     }
 
     .feature-card {
         flex-direction: row;
         align-items: flex-start;
-        gap: 14px;
+        gap: 16px;
     }
 
     .icon-container {
-        width: 48px;
+        width: 52px;
+    }
+
+    .feature-content h3 {
+        font-size: 19px;
+        font-weight: 700;
+    }
+
+    .feature-content p {
+        font-size: 16px;
     }
 
     #end {
@@ -493,10 +518,11 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 360px) {
     #left-side a {
-        display: none; /
+        display: none;
     }
 
     #text_01 {
-        font-size: 24px;
+        font-size: 28px;
+        font-weight: 600;
     }
 }
