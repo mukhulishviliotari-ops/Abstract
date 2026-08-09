@@ -490,10 +490,10 @@ body::-webkit-scrollbar {
     }
 }
 
-/* --- Extra Small Devices / Foldables (max-width: 360px) --- */
+
 @media screen and (max-width: 360px) {
     #left-side a {
-        display: none; /* Hides text title to prevent navbar overflow, keeping logo intact */
+        display: none; /
     }
 
     #text_01 {
